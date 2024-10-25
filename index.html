@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="main">
+        <div class="card">
+            <form name="login-form" onsubmit="login(event)">
+                <h2>LOGIN FORM</h2>
+                <div>
+                    <input id="fName" autocomplete="off" oninput="inputValidation(this)" type="text" placeholder="Enter your first name">
+                    <p id="fNametext"></p>
+                </div>
+                <div>
+                    <input id="lName" autocomplete="off" oninput="inputValidation(this)" type="text" placeholder="Enter your last name">
+                    <p id="lNametext"></p>
+                </div>
+                <div>
+                    <input id="email" autocomplete="off" oninput="inputValidation(this)" type="email" placeholder="Enter your email">
+                    <p id="emailtext"></p>
+                </div>
+                <div id="eye-btn-div">
+                    <input id="pass" autocomplete="off" oninput="inputValidation(this)" type="password" placeholder="********">
+                    <p id="passtext"></p>
+                    <i id="eye-btn" onclick="eyeValidation(this)" class="fa-regular fa-eye"></i>
+                </div>
+                <button>Login</button>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
